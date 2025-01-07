@@ -2,22 +2,9 @@
     Chapter 04: Functions
 ************************************* */
 
-// 0
+// 01 Intro
 
-// 0
+// 02 Arrow Functions
 
-// 0
+// 03 Parameters vs Arguments
 
-// 0
-
-// 0
-
-// 0
-
-// 0
-
-// 0
-
-// 0
-
-// 0

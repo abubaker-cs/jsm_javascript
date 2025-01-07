@@ -1,23 +1,19 @@
 /* ************************************
-    Chapter 0
+    Chapter 06 Strings in Details
 ************************************* */
 
-// 0
+// 01 Introduction
 
-// 0
+// 02 String Escape Characters
 
-// 0
+// 03 String Lenght and Basic Properties
 
-// 0
+// 04 Change String Case
 
-// 0
+// 05 Searching for Substring
 
-// 0
+// 06 Reverse a String
 
-// 0
+// 07 Repeat and Trim a String
 
-// 0
-
-// 0
-
-// 0
+// 08 Array Methods

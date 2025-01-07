@@ -1,23 +1,23 @@
 /* ************************************
-    Chapter 0
+    Chapter 05 Tricky Concepts
 ************************************* */
 
-// 0
+// 01 Introduction
 
-// 0
+// 02 Scope
 
-// 0
+// 03 Global Scope
 
-// 0
+// 04 Local Scope p1
 
-// 0
+// 05 Block Scope
 
-// 0
+// 06 Local Scope p2
 
-// 0
+// 07 Hoisting
 
-// 0
+// 08 Variable Hoisting
 
-// 0
+// 09 Function Hoisting
 
-// 0
+// 10 Closures

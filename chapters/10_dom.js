@@ -1,23 +1,13 @@
 /* ************************************
-    Chapter 0
+    Chapter 10 DOM
 ************************************* */
 
-// 0
+// 01 Introduction to DOM
 
-// 0
+// 02 Selecting Elements
 
-// 0
+// 03 Element Properties and Methods
 
-// 0
+// 04 Working with Classes
 
-// 0
-
-// 0
-
-// 0
-
-// 0
-
-// 0
-
-// 0
+// 05 Creating, Traversing, and Removing Nodes

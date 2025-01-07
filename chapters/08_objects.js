@@ -1,23 +1,9 @@
 /* ************************************
-    Chapter 0
+    Chapter 08 Objects
 ************************************* */
 
-// 0
+// 01 Introduction to Objects
 
-// 0
+// 02 Accessing, adding and updating properties
 
-// 0
-
-// 0
-
-// 0
-
-// 0
-
-// 0
-
-// 0
-
-// 0
-
-// 0
+// 03 Object Methods
