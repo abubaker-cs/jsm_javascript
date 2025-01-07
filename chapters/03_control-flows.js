@@ -12,7 +12,7 @@
 
 // 05 OR Operator (||)
 
-// 06 NOT Operator (!)
+// 06 NOT Operator (!) 
 
 // 07 Switch Statement
 
