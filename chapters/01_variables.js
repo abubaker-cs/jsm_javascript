@@ -128,9 +128,80 @@ if (age >= 18) {
 }
 
 // 07 Null and Undefined
+/*
+    Null: 
+    ====
+        1. A special assignment value that represents null, or "nothing"
+        2. It is an object
+        
+        Example: 
+            const age = null;
 
+    Undefined:
+    ========== 
+        1. It is a value of variables that are not assigned
+        2. It is a type itself
 
+        Example:
+            let name; // declared but no values was assigned
+            console.log(name); // undefined
+
+        ⚠️ Technically it is possible to assign undefined to a variable, but it is not recommended.
+        
+        Example:
+            let name = undefined;
+            console.log(name); // undefined
+*/
 
 // 08 Objects
+/*
+    Objects are used to store collections of data and more complex entities.
+    Objects consist of key-value pairs.
+    
+    Example:
+        const person = {
+            name: 'John Doe',
+            age: 30,
+            isManager: true
+        };
+        
+        console.log(person.name); // John Doe
+        console.log(person.age); // 30
+        console.log(person.isManager); // true
+
+    There are many types of objects in Javascript, such as:
+    1. Array: To store ordered collections of data
+    2. Date: To store date and time
+    3. Error: To store information about errors
+
+
+*/
 
 // 09 Statically vs Dynamically Typed Languages
+/*
+    There are two types of languages:
+    
+    1. Statically Typed Languages 
+        - The type of the variable is determined at compile time
+        - Example: Java, C++, etc.
+
+        In statically typed languages, the type of the variable is determined at compile time.
+            For example:
+            
+            int x = 10;
+            x = 'Hello, world!'; // Error
+
+    2. Dynamically Typed Languages 
+        - The type of the variable is determined at runtime
+        - Example: Javascript, Python, etc.    
+
+    
+
+    Javascript is a dynamically typed language. It means that the type of the variable is determined at runtime.
+    For example:
+    
+    let x = 10;
+    x = 'Hello, world!';
+    
+    
+*/
