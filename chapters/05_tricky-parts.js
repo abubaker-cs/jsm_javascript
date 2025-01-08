@@ -145,15 +145,38 @@ console.log(name); // Output: Abubaker
 
 */
 
-const outerFunction = (name) => {
-
-    const greeting = 'Hello Dear,';
-
-    const innerFunction = () => {
-        return `${greeting} ${name}`;
+const outer = () => {
+    const outerVar = 'Hello';
+    
+    const inner = () => {
+        const innverVar = 'Hi';
+        
+        // Accessing outerVar from the inner function
+        console.log(innverVar, outerVar);
+    
     }
-
-    return innerFunction;
+    
+    return inner;
 }
 
-const innerFunction = outerFunction('Abubaker');
+const innerFn = outer();
+
+innerFn(); // Output: Hi Hello
+
+// --------------------------------------------
+
+const init = () => {
+    const hobby = 'Learning JavaScript'; // hobby is a local variable created by init function
+
+    const displayHobby = () => {
+
+        // displayHobby() is a closure because it has access to the outer function's variables
+
+        console.log(hobby); // Accessing hobby from the inner function
+    }
+
+    displayHobby();
+    
+};
+
+init(); // Output: Learning JavaScript
