@@ -2,7 +2,7 @@
     Chapter 02: Operationss and Equality
 ************************************* */
 
-// 01 Operations
+// 📌 01 Operations
 /**
  * Following are the types of operations in Javascript:
  * 1. Arthmetic Operations
@@ -13,7 +13,7 @@
  */
 
 
-// 02 Arthmetic Operations
+// 📌 02 Arthmetic Operations
 /*
     Following are the arthmetic operations in Javascript:
     1. Addition (+)
@@ -41,7 +41,7 @@
 
 */
 
-// 03 Comparison Operations and Equality
+// 📌 03 Comparison Operations and Equality
 /**
  * Comparitive operations are used to compare two values and return a boolean value (true or false).
  * 
@@ -75,7 +75,7 @@ console.log(a === b); // false
 console.log(a !== b); // true
 
 
-// 04 Strict vs Loose Equality
+// 📌 04 Strict vs Loose Equality
 /* 
     1. ✅ Strict Equality (===): It checks the value and the type of the variable.
         Example: 5 === '5' // false
@@ -95,7 +95,7 @@ console.log(a !== b); // true
 */
 
 // ⚠️❌⚠️❌⚠️❌⚠️
-// 05 Dangers of Loose Equality
+// 📌 05 Dangers of Loose Equality
 // ⚠️❌⚠️❌⚠️❌⚠️
 /* 
     Following are the dangers of using loose equality:
@@ -115,7 +115,7 @@ console.log(a !== b); // true
     null == undefined // true
 */
 
-// 07 Logical Operators
+// 📌 07 Logical Operators
 /*
     Following are the logical operators in Javascript:
     
@@ -150,7 +150,7 @@ console.log(a !== b); // true
 */
 
 
-// 11 Assignment Operators (=, +=, -=, *=, /=, %=)
+// 📌 11 Assignment Operators (=, +=, -=, *=, /=, %=)
 /**
  * Following are the assignment operators in Javascript:
  * 1. = (Assignment)

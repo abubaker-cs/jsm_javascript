@@ -2,7 +2,7 @@
     Chapter 01: Vairables and Data Type
 ************************************* */
 
-// 01 Vairables
+// 📌 01 Vairables
 
 // Old way of declaring variables
 var variableName = 'Hello, world!';
@@ -12,7 +12,7 @@ let letVariable = 'Hello, world!';
 const constantVariable = 'Hello, world!';
 
 
-// 02 Data Types
+// 📌 02 Data Types
 
 /*
     We can categorize data types into two types:
@@ -31,7 +31,7 @@ const constantVariable = 'Hello, world!';
 */
 
 
-// 03 Comments
+// 📌 03 Comments
 
 /*
     Javascript supports single line and multi-line comments.
@@ -39,7 +39,7 @@ const constantVariable = 'Hello, world!';
     b. Multi Line Comments
 */
 
-// 04 Strings
+// 📌 04 Strings
 
 /**
  In Javascript, there are three ways to declare strings:
@@ -58,7 +58,7 @@ const constantVariable = 'Hello, world!';
 
  */
 
-// 05 Numbers
+// 📌 05 Numbers
 
 /*
     Javascrip supports untyped numbers. It means that we can use numbers without declaring their type, such as int, float, etc.
@@ -81,7 +81,7 @@ const constantVariable = 'Hello, world!';
     
 */
 
-// NaN: Not a Number
+// 📌 NaN: Not a Number
 /*
     NaN is a special value in Javascript. It is used to represent a value that is not a number.
     For example:
@@ -93,7 +93,7 @@ const constantVariable = 'Hello, world!';
 */
 
 
-// 06 Booleans
+// 📌 06 Booleans
 /* 
     Booleans are used to represent true or false values.
     For example:
@@ -127,7 +127,7 @@ if (age >= 18) {
     console.log('You are an adult!');
 }
 
-// 07 Null and Undefined
+// 📌 07 Null and Undefined
 /*
     Null: 
     ====
@@ -153,7 +153,7 @@ if (age >= 18) {
             console.log(name); // undefined
 */
 
-// 08 Objects
+// 📌 08 Objects
 /*
     Objects are used to store collections of data and more complex entities.
     Objects consist of key-value pairs.
@@ -177,7 +177,7 @@ if (age >= 18) {
 
 */
 
-// 09 Statically vs Dynamically Typed Languages
+// 📌 09 Statically vs Dynamically Typed Languages
 /*
     There are two types of languages:
     

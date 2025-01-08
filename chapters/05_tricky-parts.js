@@ -12,7 +12,7 @@
  */
 
 
-// 01 Global Scope
+// 📌 01 Global Scope 
 
 /*
     Global Scope: A variable declared OUTSIDE a function becomes a global variable.
@@ -35,7 +35,7 @@ const logName = () => {
 
 logName(); // Output: I am a global variable
 
-// 02 Local Scope
+// 📌 02 Local Scope
 
 /*
     Local Scope: A variable declared INSIDE a function becomes a local variable.
@@ -77,7 +77,7 @@ const someFunction = () => {
 }
 someFunction();
 
-// 03 Block Statements Scope: if, for and while loops.
+// 📌 03 Block Statements Scope: if, for and while loops.
 /*
     Variable defined using:
         - var keyword has a function scope.
@@ -97,12 +97,63 @@ console.log(name); // Output: Abubaker
 
 /* =========================================== */
 
-// 06 Hoisting
+// 📌 04 Hoisting
+/*
+    Hoisting is a JavaScript mechanism where variables and function declarations are moved to the top of their scope before code execution.
+    
+    ⚠️ Note: Only declarations are moved to the top, not the initializations.
 
-// 07 Variable Hoisting
+    Hoisting is JavaScript's default behavior of moving declarations to the top, based on this behavior, a variable ❌ cannot be used before it has been declared.
+*/
 
-// 08 Function Hoisting
+// 📌 05 Variable Hoisting
+
+/*
+
+    The order in which the variable should be used is:
+    1. Variable Declaration
+    2. Variable Initialization
+    3. Variable Usage
+
+    Going against the above order will result in an error.
+
+*/
+
+
+// 📌 06 Function Hoisting
+
+/*
+    1. Function declarations are also hoisted to the top of the scope in which they are declared.
+    2. Functions declared using the const keyword are not hoisted.
+
+    Remember: Always declare the function before using it.
+
+*/
 
 /* =========================================== */
 
-// 09 Closures
+// 📌 07 Closures
+/*
+    A closure is a function that has access to the outer function's variables even after the outer function has returned.
+
+    A closure is created when an inner function is returned from an outer function.
+
+    Closures are used to:
+    - Encapsulate data.
+    - Create private variables.
+    - Create factory functions.
+
+*/
+
+const outerFunction = (name) => {
+
+    const greeting = 'Hello Dear,';
+
+    const innerFunction = () => {
+        return `${greeting} ${name}`;
+    }
+
+    return innerFunction;
+}
+
+const innerFunction = outerFunction('Abubaker');

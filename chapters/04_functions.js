@@ -2,7 +2,7 @@
     Chapter 04: Functions
 ************************************* */
 
-// 01 Intro
+// 📌 01 Intro
 function basicSquare(number){
     return number * number;
 }
@@ -10,7 +10,7 @@ basicSquare(5); // 25
 
 console.log(basicSquare(25)); // 625
 
-// 02 Arrow Functions
+// 📌 02 Arrow Functions
 /*
     Arrow functions are a more concise way to write functions in JavaScript.
     They are written using a fat arrow (=>) between the parameters and the function body.
@@ -39,7 +39,7 @@ console.log(square(35)); // 1225
 const sqr = number => number * number;
 console.log(sqr(5.7)); // 32.49
 
-// 03 Parameters vs Arguments
+// 📌 03 Parameters vs Arguments
 /* 
     Parameters are the VARIABLE NAMES listed in the function definition.
     Arguments are the REAL VALUES that are passed to the function.

@@ -2,7 +2,7 @@
     Chapter 03: Logic and Control Flow
 ************************************* */
 
-// 01 Logic and Control Flow
+// 📌 01 Logic and Control Flow
 const age = 18;
 
 if (age > 18) {
@@ -13,7 +13,7 @@ if (age > 18) {
     console.log('You are not allowed to enter');
 }
 
-// 02 Ternary Operator
+// 📌 02 Ternary Operator
 /*
     The Ternary Operator is a shorthand for if-else statement
     It is a good way to write simple if-else statements in a single line
@@ -25,7 +25,7 @@ const isAllowed = age > 18
 
 console.log(isAllowed);
 
-// 03 Truty/Falsy Values
+// 📌 03 Truty/Falsy Values
 /* 
     The understanding of Truty and Falsy values is important when working with control flow statements.
     - Truty values are considered true when evaluated in a boolean context, while Falsy values are considered false.    
@@ -48,7 +48,7 @@ console.log(isAllowed);
 
 */
 
-// 04 And Operator (&&)
+// 📌 04 And Operator (&&)
 const userAge = 19;
 const isCool = true;
 
@@ -68,7 +68,7 @@ console.log('truthy' && 1 && 'test'); // test was the last value
 console.log('truthy' && 1 && 'test' && 999); // 999 was the last value
 
 
-// 05 OR Operator (||)
+// 📌 05 OR Operator (||)
 
 /**
  * The OR operator returns the first truthy value or the last falsy value if all values are false
@@ -79,7 +79,7 @@ console.log('' || 0 || null || undefined); // undefined was the last value
 console.log('' || 0 || null || false); // false was the last value
 console.log('' || 0 || null || false || 'test'); // test was the last value
 
-// 06 NOT Operator (!) 
+// 📌 06 NOT Operator (!) 
 
 /*
     The NOT operator returns the opposite boolean value of the operand
@@ -103,7 +103,7 @@ console.log(!!0); // false because 0 is a falsy value
 console.log(!!'-303'); // true because '-303' is a truthy value
 
 
-// 07 Switch Statement
+// 📌 07 Switch Statement
 /*
     The switch statement is used to perform different actions based on different conditions.
     It is a good alternative to multiple if statements.
@@ -134,7 +134,7 @@ switch (superHero) {
 }
 
 
-// 08 For Loop
+// 📌 08 For Loop
 /*
     The for loop is used to execute a block of code multiple times.
     It is a good way to iterate over arrays or strings.
@@ -146,7 +146,7 @@ for (; i < 5; i++) {
     console.log(i);
 }
 
-// 09 While Loop
+// 📌 09 While Loop
 /*
     The while loop is used to execute a block of code as long as the condition is true.
     It is a good way to iterate when the number of iterations is unknown.
