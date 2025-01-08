@@ -37,20 +37,34 @@ if (age > 18) {
 
 */
 
+// 03 And Operator (&&)
+const userAge = 19;
+const isCool = true;
 
-// 03 Logical Operators Part 2
+if (isCool && userAge > 18) {
+    console.log('You may enter, welcome');
+} else {
+    console.log('You are not allowed to enter');
+}
+
+// We can check the result of the && operator
+// ⚠️ The following code will return the last value if all values are true
+console.log(isCool && userAge > 18); // true - since both values are true
+
+// AND returns the first falsy value or the last thruthy value if all values are true
+console.log('truthy' && 3); // 3 was the last value  
+console.log('truthy' && 1 && 'test'); // test was the last value 
+console.log('truthy' && 1 && 'test' && 999); // 999 was the last value
 
 
-// 04 And Operator (&&)
+// 04 OR Operator (||)
 
-// 05 OR Operator (||)
+// 05 NOT Operator (!) 
 
-// 06 NOT Operator (!) 
+// 06 Switch Statement
 
-// 07 Switch Statement
+// 07 Ternary Operator
 
-// 08 Ternary Operator
+// 08 For and While Loops
 
-// 09 For and While Loops
-
-// 10 For Loop
+// 09 For Loop
