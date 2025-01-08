@@ -180,3 +180,78 @@ const init = () => {
 };
 
 init(); // Output: Learning JavaScript
+
+/*
+    Scoping vs Closure
+
+    1. Scoping
+    Scoping refers to the accessibility and lifetime of variables in different parts of the code, depending on where they are declared.
+
+    Types of Scope:
+    1. Global Scope: Variables declared outside any function or block are accessible everywhere in the code.
+    2. Function Scope: Variables declared with var inside a function are confined to that function. They are not accessible outside it.
+    3. Block Scope: Variables declared with let or const are confined to the block (e.g., { }) in which they are declared.
+
+    Key Points:
+    1. Scoping is determined at the time of writing the code (static/lexical scoping).
+    2. Variables declared in one scope are not accessible in other scopes unless explicitly passed.
+    3. Modern JavaScript emphasizes block scoping with let and const to improve clarity and reduce errors.
+*/
+
+function example() {
+    let a = 10; // Scoped to this block
+    if (true) {
+      let b = 20; // Scoped to this 'if' block
+      console.log(a); // 10 (accessible due to lexical scoping)
+    }
+    console.log(b); // Error: b is not defined (b is block-scoped)
+  }
+  example();
+
+  
+/**
+    2. Closures
+    Closures are a function’s ability to remember the variables from the scope in which it was created, even after that scope has exited.
+
+    Key Points:
+    1. Closures occur when a function "captures" variables from its outer scope.
+    2. A closure gives access to an outer function’s scope from an inner function, even after the outer function has returned.
+    3. Closures are commonly used for data encapsulation, currying, and callbacks.   
+*/
+
+function createCounter() {
+    let count = 0; // Variable in outer scope
+    return function () {
+      count++; // Inner function "remembers" count
+      console.log(count);
+    };
+  }
+  
+  const counter = createCounter();
+  counter(); // 1
+  counter(); // 2
+  counter(); // 3
+
+// Here, count persists between function calls because the inner function forms a closure over it.
+
+
+/**
+ * Key Differences:
+ * 
+ * Definition: 
+ *      1. Scoping: Determines where variables are accessible.
+ *      2. Closure: Preserves variables from the outer scope.
+ * 
+ * Timing: 
+ *      1. Scoping: Happens at declaration (static).	
+ *      2. Closure: Happens at runtime when a function is created.
+ * 
+ * Purpose: 
+ *      1. Scoping: Controls visibility of variables.
+ *      2. Closure: Allows inner functions to retain access to outer scope.
+ * 
+ * Usage: 
+ *      1. Scoping: Block, function, or global variable access.
+ *      2. Closure: Function factories, callbacks, or maintaining state.
+ * 
+ */
