@@ -2,12 +2,12 @@
     Chapter 13 Modern JavaScript
 ************************************* */
 
-// 01 ES6 + JavaScript
+// 📌 01 ES6 + JavaScript
 
-// 02 Imports and Exports
+// 📌 02 Imports and Exports
 
-// 03 Spread and REst
+// 📌 03 Spread and REst
 
-// 04 Arrow Destructing
+// 📌 04 Arrow Destructing
 
-// 05 Object Destructuring
+// 📌 05 Object Destructuring

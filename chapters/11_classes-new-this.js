@@ -2,6 +2,6 @@
     Chapter 0
 ************************************* */
 
-// 01 The "new" keyword
+// 📌 01 The "new" keyword
 
-// 02 The "this" keyword
+// 📌 02 The "this" keyword
