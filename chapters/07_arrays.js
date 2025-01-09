@@ -41,4 +41,48 @@ for(let i = 0; i < months.length; i++) {
 
 // 📌 02 Array Methods
 
+/*
+ * 🔖 01
+ * array.push()
+ *  It adds an element at the end of the array
+*/
+
+
+/*
+ * 🔖 02
+ * array.pop()
+ * It removes an element from the end of the array
+*/
+
+
+/*
+ * 🔖 03
+ * array.shift()
+ * It removes an element from the beginning of the array
+*/
+
+
+/*
+ * 🔖 04
+ * array.unshift()
+ * It adds an element at the beginning of the array
+*/
+
+
+/*
+ * 🔖 05
+ * array.splice()
+ * It adds or removes elements from an array
+*/
+
+
+/*
+ * 🔖 06
+ * array.slice()
+ * It returns a new array with the elements from the specified start to end index
+*/
+
+
+
+
 // 📌 03 Array Method for Looping
