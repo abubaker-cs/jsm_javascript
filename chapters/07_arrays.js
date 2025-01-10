@@ -124,41 +124,69 @@ console.log(monthsCopy); //
  * ------------------------------------------------------------------------------------
  */
 
+const monthsOfYear = [
+    'Jan',
+    'Feb',
+    'Mar',
+    'Apr',
+    'May',
+    'Jun',
+    'Jul',
+    'Aug',
+    'Sep',
+    'Oct',
+    'Nov',
+    'Dec'
+];
 
 /**
  * 🔖 01
  * array[index]
+ * It returns the element at the specified index
  */
-
+console.log(monthsOfYear[2]); // Mar
 
 /**
  * 🔖 02
  * push()
+ * Adds the value at the end of the array
  */
+monthsOfYear.push('New Month');
+console.log(monthsOfYear); // [ 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec', 'New Month' ]
 
 
 /**
  * 🔖 03
  * pop()
+ * Removes the last element from the array
  */
-
+monthsOfYear.pop();
+console.log(monthsOfYear); // [ 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec' ]
 
 /**
  * 🔖 04
  * shift()
+ * Removes the first element from the array
  */
+monthsOfYear.shift();
+console.log(monthsOfYear); // [ 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec' ]
 
 
 /**
  * 🔖 05
  * unshift()
+ * Adds the value at the beginning of the array
  */
+monthsOfYear.unshift('New Month 💖');
+console.log(monthsOfYear); // [ 'New Month 💖', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec' ]
 
 
 /**
  * 🔖 06
  * splice(fromIndex, no_of_elements)
+ * Adds the value at the specified index
  */
+
 
 
 /**
