@@ -184,46 +184,65 @@ console.log(monthsOfYear); // [ 'New Month 💖', 'Feb', 'Mar', 'Apr', 'May', 'J
 /**
  * 🔖 06
  * splice(fromIndex, no_of_elements)
- * Adds the value at the specified index
+ * It adds or removes elements from an array
+ * - the first argument is the index at which the element should be added 
+ * - the second argument is the number of elements to be removed
  */
-
-
+monthsOfYear.splice(3, 3, 'New 😀👏🧩 members');
+console.log(monthsOfYear); // [ 'New Month 💖', 'Feb', 'Mar', 'New 😀👏🧩 members', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec' ]
 
 /**
  * 🔖 07
  * slice(fromIndex, toIndex)
+ * It returns a new array with the elements from the specified start to end index
  */
+const monthsOfYearCopy = monthsOfYear.slice(2, 4);
+console.log(monthsOfYearCopy); // [ 'Mar', 'New 😀👏🧩 members', 'Apr', 'May' ]
 
 
 /**
  * 🔖 08
  * concat()
+ * Join several arrays into one
  */
-
+const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+const dates = [1, 2, 3, 4, 5, 6, 7];
+const all = days.concat(dates);
+const all2 = dates.concat(days);
+console.log(all); // [ 'Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 1, 2, 3, 4, 5, 6, 7 ]
+console.log(all2); // [ 1, 2, 3, 4, 5, 6, 7, 'Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat' ]
 
 /**
  * 🔖 09
- * join('')
+ * join('') - convert array data into a single string
+ * Returns a string with all array values joined.
  */
-
+const data = [1, 2, 3, 4, 5, 6, 7];
+const joinData = data.join(' 💖 ');
+console.log(joinData); 
 
 /**
  * 🔖 10
  * array.length()
- * 
+ * returns the length of the array
  */
-
+console.log(data.length); // 7
 
 /**
  * 🔖 11
  * reverse()
+ * Reverse the order of the elements in an array
  */
-
+const reverseData = data.reverse();
+console.log(reverseData); // [ 7, 6, 5, 4, 3, 2, 1 ]
 
 /**
  * 🔖 12
  * tostring()
+ * Returns a string with all array values joined.
  */
+const toStringData = data.toString();
+console.log(toStringData); // 7,6,5,4,3,2,1
 
 
 //  --------------------------------------------------------------------------
