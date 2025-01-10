@@ -2,6 +2,10 @@
     Chapter 07 Arrays
 ************************************* */
 
+const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+
+// ------------------------------------------------------------------------------
+
 // 📌 01 Arrays
 const friends = ['Michael', 'Steven', 'Peter', 'John'];
 console.log(friends[0]);
@@ -32,8 +36,6 @@ const arr = [
 ]
 
 // To loop through an array
-const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-
 for(let i = 0; i < months.length; i++) {
     console.log(months[i]);
 }
@@ -47,20 +49,11 @@ for(let i = 0; i < months.length; i++) {
  * array.push()
  *  It adds an element at the end of the array
 */
+months.push('New Month 123');
+console.log(months); // [ 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec', 'New Month' ]
 
-
-/*
- * 🔖 02
- * array.pop()
- * It removes an element from the end of the array
-*/
-
-
-/*
- * 🔖 03
- * array.shift()
- * It removes an element from the beginning of the array
-*/
+console.log(months.push('New Month 456')); // 14
+// ⚠️ It returns the length of the array after adding the new element
 
 
 /*
@@ -69,21 +62,60 @@ for(let i = 0; i < months.length; i++) {
  * It adds an element at the beginning of the array
 */
 
+months.unshift('I have been added at the start of the array');
+console.log(months); // [ 'I have been added at the start of the array', 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec', 'New Month' ]
+
+
+// ------------------------------------------------------------------------------------ 
+
+
+
+/*
+ * 🔖 02
+ * array.pop()
+ * It removes an element from the end of the array
+*/
+
+console.log(months); // [ 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec', 'New Month', 'New Month 123', 'New Month 456' ]
+
+// Let us remove the last element from the array
+months.pop();
+
+console.log(months); // [ 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec', 'New Month' ]
+
+/*
+ * 🔖 03
+ * array.shift()
+ * It removes an element from the beginning of the array
+*/
+
+const removedValue = months.shift(); // Removes the first element from the array
+console.log(`We have removed "${removedValue}" from the array`); 
+console.log(months); // [ 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec', 'New Month' ]
+
+
+// ------------------------------------------------------------------------------------ 
+
+
 
 /*
  * 🔖 05
- * array.splice()
+ * array.splice(Add @, how many to remove)
  * It adds or removes elements from an array
+ * - the first argument is the index at which the element should be added 
+ * - the second argument is the number of elements to be removed
 */
-
+months.splice(2, 0, 'v1', 'v2', 'v3'); // Adds the elements at the specified index
+console.log(months); // [ 'Feb', 'Mar', 'Apr', 'New Month 123', 'New Month 456', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec', 'New Month' ]  
 
 /*
  * 🔖 06
- * array.slice()
+ * array.slice(start from, selection range)
  * It returns a new array with the elements from the specified start to end index
 */
 
-
+const monthsCopy = months.slice(2, 6); // Returns a new array with the elements from the specified start to end index
+console.log(monthsCopy); // 
 
 
 /**
