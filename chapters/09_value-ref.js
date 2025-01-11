@@ -50,7 +50,7 @@ console.log(otherPerson === person); // true
 
 /**
  * Methods:
- * 1. Spread Operator
+ * 1. Spread Operator - ( ⚠️❌⚠️ It is not suitable for deep cloning nested objects)
  * 2. .slice() - Returns a shallow copy of a portion of an array - slice(start, end)
  */
 
@@ -117,3 +117,35 @@ console.log(cat2); // { name: 'Garfield', color: 'black', greeting: [Function: g
 
 
 // 📌 03 Deep Cloning 
+/**
+ * We cannot use the spread operator to clone nested objects, as it will clone only the outer object without cloning the nested objects.
+ * 
+ * We can resolve this issue in two steps:
+ * 1. JSON.stringify
+ * 2. JSON.parse()
+ * 
+ * The shorthand for this is:
+ * JSON.parse(JSON.stringify(object_to_clone))
+ */
+
+// Example:
+const user = {
+    name: 'John',
+    age: 30,
+    address: {
+        city: 'New York',
+        state: 'NY'
+    }
+};
+
+/**
+ * JSON.stringify() - Converts a JavaScript object or value to a JSON string.
+ * JSON.parse() - Parses a JSON string, constructing the JavaScript value or object described by the string.
+ */
+
+const deep_clone = JSON.parse(JSON.stringify(user));
+
+console.log(user); // { name: 'John', age: 30, address: { city: 'New York', state: 'NY' } }
+console.log(deep_clone); // { name: 'John', age: 30, address: { city: 'New York', state: 'NY' } }
+
+console.log(user === deep_clone); // false
