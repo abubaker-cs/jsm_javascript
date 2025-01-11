@@ -249,49 +249,147 @@ console.log(toStringData); // 7,6,5,4,3,2,1
 //  Array methods for Looping 
 //  --------------------------------------------------------------------------
 
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
 /**
  * ✅ 01
- * array.forEach()
+ * array.forEach() - Perform calculations on each array element, without creating a new array
+ * 
+ * It executes a provided function once for each array element.
+ * .foreach() retruns - NOTHING ❌ undefined
  */
+// months.forEach((month, index) => {
+//     console.log(`${index + 1}. ${month}`);
+// });
 
+numbers.forEach((number)=>{
+    console.log(number *2);
+}) 
 
 /**
  * ✅ 02
- * array.map()
+ * array.map() - Stores the result in a new array
+ * 
+ * It creates a new array by applying a specified function to each element of the original array. 
+ * It returns a new array with the transformed values, leaving the original array unchanged.
+ * It is commonly used for data manipulation and transformation.
+ * 
+ * Features:
+ * 🔖 With the map() method is chainable 🔗 with reduce(), sort(), filter() etc.
+ * 
+ * .map() returns - NEW ARRAY ✅
  */
+
+const doubledNumbers = numbers.map((number) => {
+    return number * 2;
+});
+
+console.log(doubledNumbers); // [ 2, 4, 6, 8, 10, 12, 14, 16, 18, 20 ]
 
 
 /**
  * ✅ 03
- * array.filter()
+ * array.filter() - Create a new array with searched results
+ * 
+ * The filter() method of Array instances creates a "shallow copy" of a portion of a given array, 
+ * filtered down to just the elements from the given array that pass the test implemented by the provided function.
+ * 
+ * .filter() returns - NEW ARRAY ✅
  */
+
+// Example 1
+ages = [30, 16, 18, 27, 19, 20, 14, 12, 32, 33, 21, 40];
+function checkAge(age) {
+    return age >= 18;
+}
+const adults = ages.filter(checkAge); // It will filter out the ages greater than or equal to 18
+console.log(adults); // [ 30, 18, 27, 20, 32, 33, 21, 40 ]
+
+
+// Example 2
+const words = ['spray', 'elite', 'exuberant', 'destruction', 'present'];
+const result = words.filter((word) => word.length > 6); // It will filter out the words with length greater than 6
+console.log(result); // [ 'exuberant', 'destruction', 'present' ]
 
 
 /**
- * ✅ 04
- * array.findIndex()
+ * ✅ 04 
+ * array.findIndex() - Find the first occurrence of required element in an array
+ * 
+ * It returns the index of the first element in the array that satisfies the provided testing function. 
+ * Otherwise, it returns -1, indicating that no element passed the test.
  */
 
+const range = [2, 9, 4, 5, 6, 33, 25, 17, 11];
+function checkRange(range){
+    return range > 18;
+}
+
+// It will return the 🔢 "index of" the 🔖 first element in the array that satisfies the provided testing function.
+console.log(range.findIndex(checkRange)); // 5
+
+// ---------------------- Some() vs Every () -------------------------------------- 👏👏👏👏
 
 /**
- * ✅ 05
- * array.some()
+ * ✅ 05 
+ * array.some() - Does any required value exit in the array?
+ * 
+ * It checks if at least one element in the array passes the test implemented by the provided function.
+ * 
+ * Returns: Boolean
  */
+
+console.log(range.some(checkRange)); // true
 
 
 /**
  * ✅ 06
- * array.every()
+ * array.every() - Do ALL/EVERY required value exit in the array?
+ * It checks if all elements in the array pass the test implemented by the provided function.
+ * 
+ * Returns: Boolean
  */
 
+console.log(range.every(checkRange)); // false
+
+
+
+// ---------------------- Some() vs Every () -------------------------------------- 👏👏👏👏
 
 /**
  * ✅ 07
- * array.reduce()
+ * array.reduce() - Start performing actions from the 🔖 FIRST 🔖 ELEMENT of the array
+ * 
+ * It executes a reducer function (that you provide) on each element of the array, resulting in a single output value.
+ * 
+ * Calls the specified callback function for all the elements in an array. The return value of the callback function is the accumulated result, 
+ * and is provided as an argument in the next call to the callback function.
+ * 
+ * ⚠️ Starts from the first number in the array and moves to the last number
  */
 
+const dataSet = [32, 16, 40, 3, 15, 19, 48, 37];
+const initialValue = 0;
+
+const sum = dataSet.reduce((sum, item) => {
+    // console.log(`accumulator: ${sum}, item: ${item}`);
+    return sum + item;
+}, initialValue);
+
+console.log(sum); // 210
 
 /**
  * ✅ 08
- * array.reduceRight()
+ * array.reduceRight() - Start performing actions from the 🔖 LAST 🔖 ELEMENT of the array
+ * 
+ * Subtract the numbers, right-to-left, and display the sum.
+ * ⚠️ Starts from the last number in the array and moves to the first number
  */
+
+function sum_reducer(sum, item){
+    return sum + item;
+}
+
+let total = dataSet.reduceRight(sum_reducer)
+console.log(total); // 210
+
