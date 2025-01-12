@@ -13,7 +13,7 @@ window.onload = function () {
     const displayDate = document.querySelector('h4');
     displayDate.appendChild(currentDate); 
     
-    // It will add the heading to the body.
+    // Bind the element to the DOM (h4 tag)
     document.body.appendChild(displayDate); 
 }
 
@@ -116,3 +116,32 @@ function menuClicked(currentElement){
 
 // 📌 05 Creating, Traversing, and Removing Nodes
 
+// Creating an HTML Tag using JavaScript
+document.createElement('h1');
+
+// Binding the element to the DOM
+// document.body.appendChild(document.createElement(h1));
+
+const subjects = document.querySelector(".subjects");
+console.log(subjects.firstElementChild); // Returns the first child of the element
+console.log(subjects.lastElementChild); // Returns the last child of the element
+
+const favSub = document.querySelector(".fav-subject");
+console.log(favSub.previousElementSibling); // Returns the previous sibling of the element
+console.log(favSub.nextElementSibling); // Returns the next sibling of the element
+console.log(favSub.parentElement); // Returns the parent of the element
+
+/**
+ * ✅ Methods to Traverse with nodes:
+ * 1. childNodes
+ * 2. firstChild
+ * 3. lastChild
+ * 4. nextSibling
+ * 5. previousSibling
+ * 6. parentNode
+ */
+
+// ❌ Removing NODES from the DOM
+// ⚠️ Removed nodes will still remain in memory, and can be called back if needed
+const removeItem =  document.querySelector(".remove_me");
+removeItem.remove();
