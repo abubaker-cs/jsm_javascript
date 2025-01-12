@@ -1,0 +1,12 @@
+.menu-item{
+    background-color: black;
+    color: white;
+    margin: .3rem;
+    width: 200px;
+    padding: .3rem;
+}
+
+.menu-item:hover{
+    background-color: white;
+    color: blue;
+}
